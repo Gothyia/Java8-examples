@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Helpers {
@@ -27,11 +28,16 @@ public class Helpers {
 
     public static List<Teacher> getTeachers(){
         List<Teacher> teachers = new ArrayList<Teacher>();
-        teachers.add(new Teacher("Blanka", 37, "Kärrtorp", "Svenska"));
-        teachers.add(new Teacher("Anders", 45, "Fruängen", "Matematik");
-        teachers.add(new Teacher("Josefin", 48, "Bromma", "Engelska"));
-        teachers.add(new Teacher("Mats", 28, "Kista", "Tyska"));
-        teachers.add(new Teacher("Gunnar", 55, "Nacka", "Musik"));
+        teachers.add(new Teacher("Blanka", 37, "Kärrtorp", Arrays.asList("Svenska", "Engelska")));
+        teachers.add(new Teacher("Anders", 45, "Fruängen", Arrays.asList("Svenska", "SO")));
+        teachers.add(new Teacher("Josefin", 48, "Bromma", Arrays.asList("Engelska", "Hälsa")));
+        teachers.add(new Teacher("Mats", 28, "Kista", Arrays.asList("Matematik", "Engelska")));
+        teachers.add(new Teacher("Gunnar", 55, "Nacka", Arrays.asList("Matematik", "Naturvetenskap")));
+        teachers.add(new Teacher("Anna", 37, "Kärrtorp", Arrays.asList("Religion", "Musik")));
+        teachers.add(new Teacher("Johan", 32, "Fruängen", Arrays.asList("Svenska", "Slöjd")));
+        teachers.add(new Teacher("Oskar", 41, "Bromma", Arrays.asList("Svenska", "Engelska")));
+        teachers.add(new Teacher("Sanna", 50, "Kista", Arrays.asList("Svenska", "Engelska")));
+        teachers.add(new Teacher("Hilevi", 55, "Nacka", Arrays.asList("Svenska", "Samhällskunskap")));
 
         return teachers;
     }
