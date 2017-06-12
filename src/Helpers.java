@@ -16,11 +16,11 @@ public class Helpers {
 
     public static List<Student> getStudents(){
         List<Student> students = new ArrayList<Student>();
-        students.add(new Student("Kajsa", 13, 7, "Kista"));
-        students.add(new Student("Stefan", 15, 9, "Nacka"));
-        students.add(new Student("Joakim",11, 7, "Bromma"));
-        students.add(new Student("Linda", 12, 8, "Fruängen"));
-        students.add(new Student("Jonas", 14,8 , "Kärrtorp"));
+        students.add(new Student("Kajsa", 13, 'B', "Kista"));
+        students.add(new Student("Stefan", 15, 'A', "Nacka"));
+        students.add(new Student("Joakim",11, 'D', "Bromma"));
+        students.add(new Student("Linda", 12, 'C', "Fruängen"));
+        students.add(new Student("Jonas", 14,'E' , "Kärrtorp"));
 
         return students;
     }
